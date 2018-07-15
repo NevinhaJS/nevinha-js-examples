@@ -19,12 +19,6 @@ class Form extends NevinhaComponent {
 					onKeyUp={handleKeyPress}
 					type="text"
 				/>
-
-				{test.map((number, index) => (
-					<div key={index}>
-						<p>This is the number: {number} </p>
-					</div>
-				))}
 			</div>
 		);
 	}
