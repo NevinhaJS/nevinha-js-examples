@@ -20,5 +20,8 @@
     "prettier-eslint-cli": "^4.7.1",
     "webpack": "^3.4.1",
     "webpack-dev-server": "^2.6.1"
+  },
+  "dependencies": {
+    "nevinha-js": "^0.2.2"
   }
 }
