@@ -5,3 +5,4 @@ This repository is a set of examples of how you can use NevinhaJS in your projec
 ## Table of Contents
 
 - [Basic Example](basic-example)
+- [Todo List Example](todo-list)
