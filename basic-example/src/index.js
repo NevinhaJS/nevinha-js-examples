@@ -11,6 +11,7 @@ function h(type, attributes, ...args) {
 class Form extends NevinhaComponent {
 	render() {
 		const {handleKeyPress} = this.props;
+		const test = ['asd', 'bbc',3]
 
 		return (
 			<div class="form">
@@ -18,6 +19,12 @@ class Form extends NevinhaComponent {
 					onKeyUp={handleKeyPress}
 					type="text"
 				/>
+
+				{test.map((number, index) => (
+					<div key={index}>
+						<p>This is the number: {number} </p>
+					</div>
+				))}
 			</div>
 		);
 	}
