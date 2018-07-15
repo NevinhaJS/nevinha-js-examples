@@ -10,11 +10,14 @@ function h(type, attributes, ...args) {
 
 class Form extends NevinhaComponent {
 	render() {
-		const {handleChange} = this.props;
+		const {handleKeyPress} = this.props;
 
 		return (
 			<div class="form">
-				<input onKeyUp={handleChange} type="text" />
+				<input
+					onKeyUp={handleKeyPress}
+					type="text"
+				/>
 			</div>
 		);
 	}
@@ -24,11 +27,11 @@ class App extends NevinhaComponent {
 	constructor() {
 		super();
 
-		this.handleChange = this.handleChange.bind(this);
+		this.handleKeyPress = this.handleKeyPress.bind(this);
 		this.state.name = 'NevinhaJS';
 	}
 
-	handleChange({target}) {
+	handleKeyPress({target}) {
 		this.setState({
 			name: target.value
 		});
@@ -39,7 +42,7 @@ class App extends NevinhaComponent {
 
 		return (
 			<div>
-				<Form handleChange={this.handleChange} />
+				<Form handleKeyPress={this.handleKeyPress} />
 
 				<h1>
 					<p>Hello! This is the new: </p>
