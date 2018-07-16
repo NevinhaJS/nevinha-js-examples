@@ -18,7 +18,14 @@ class Form extends NevinhaComponent {
 				<input
 					onKeyUp={handleKeyPress}
 					type="text"
+					className="input"
+					placeholder="Edit page name"
 				/>
+				<footer>
+					<p className="footer">
+						Type the page name in the input about
+					</p>
+				</footer>
 			</div>
 		);
 	}
@@ -29,7 +36,6 @@ class App extends NevinhaComponent {
 		super();
 
 		this.handleKeyPress = this.handleKeyPress.bind(this);
-		this.state.name = 'NevinhaJS';
 	}
 
 	handleKeyPress({target}) {
@@ -43,12 +49,13 @@ class App extends NevinhaComponent {
 
 		return (
 			<div>
-				<Form handleKeyPress={this.handleKeyPress} />
-
-				<h1>
-					<p>Hello! This is the new: </p>
-					{name}
+				<h1 className="hello">
+					<p className="margin-hello">Hello! This is the new: </p>
+					{name ? name : 'NevinhaJS'}
 				</h1>
+				<div>
+					<Form handleKeyPress={this.handleKeyPress} />
+				</div>
 			</div>
 		);
 	}
