@@ -41,8 +41,8 @@ class Form extends NevinhaComponent {
 
 		return (
 			<form class="form" onSubmit={this.handleSubmit}>
-				<input onChange={this.handleChange} type="text" value={name} />
-				<input className="btn" type="submit" value="Add todo" />
+				<input placeholder="What needs to be done?" className="input" onChange={this.handleChange} type="text" value={name} />
+				<input className="btn submit" type="submit" value="Add todo" />
 			</form>
 		);
 	}
@@ -52,10 +52,14 @@ const List = ({todos, handleEdit, handleRemove}) => {
 	return (
 		<div>
 			{todos.map(({name, watched}, index) => (
-				<p data-index={index} key={index}>
-					<input checked={watched} onClick={handleEdit} type="checkbox" />
-					<span style={`text-decoration: ${watched ? 'line-through' : 'none'}`}>Film name: {name}</span>
-					<a className="btn" href="#" onClick={handleRemove}>Remove film</a>
+				<p key={index} className="data-index">
+					<div className="space">
+						<div className="justifc" data-index={index}>
+							<input className="checkbox" checked={watched} onClick={handleEdit} type="checkbox" />
+							<span style={`text-decoration: ${watched ? 'line-through' : 'none'}`}>{name}</span>
+						</div>
+						<a className="btn sub" href="#" onClick={handleRemove}><i class="fa fa-times"></i></a>
+					</div>
 				</p>
 			))}
 		</div>
@@ -66,16 +70,7 @@ class App extends NevinhaComponent {
 	constructor() {
 		super();
 
-		this.state.todos = [{
-			name: 'Suits',
-			watched: true
-		}, {
-			name: 'Gotham',
-			watched: false
-		}, {
-			name: 'Game of thrones',
-			watched: false
-		}];
+		this.state.todos = [];
 
 		this.addTodo = this.addTodo.bind(this);
 		this.handleEdit = this.handleEdit.bind(this);
@@ -123,14 +118,25 @@ class App extends NevinhaComponent {
 
 		return (
 			<div>
-				<Form
-					addTodo={this.addTodo}
-				/>
-				<List
-					handleEdit={this.handleEdit}
-					handleRemove={this.handleRemove}
-					todos={todos}
-				/>
+				<h1 className="hello margin-hello">Film</h1>
+				<div className="bg-list">
+					<Form
+						addTodo={this.addTodo}
+					/>
+					<List
+						handleEdit={this.handleEdit}
+						handleRemove={this.handleRemove}
+						todos={todos}
+					/>
+					<div className="space margin-item">
+						<p className="cl-font1">1 item left</p>
+						<span className="all-flex-span">
+							<a href="#" className="margin-all cl-font" id="buttom">All</a>
+							<a href="#" className="margin-all cl-font">Active</a>
+							<a href="#" className="margin-all cl-font">Clompleted</a>
+						</span>
+					</div>
+				</div>
 			</div>
 		);
 	}
