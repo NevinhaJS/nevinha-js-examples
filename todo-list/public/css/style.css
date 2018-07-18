@@ -5,7 +5,8 @@ body {
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
+	color: red;
 }
 
 .height {
@@ -70,6 +71,11 @@ a {
     margin-right: 4px;
 }
 
+.checkbox:checked {
+	box-shadow: inset 0 0 0 4px #fff;
+	background: #ebd7d8;
+}
+
 .data-index {
     color: #4d4d4d;
     margin: 0;
@@ -81,7 +87,7 @@ a {
 .space {
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
 }
 
 .justifc {

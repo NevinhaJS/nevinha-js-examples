@@ -53,8 +53,8 @@ const List = ({todos, handleEdit, handleRemove}) => {
 		<div>
 			{todos.map(({name, watched}, index) => (
 				<p key={index} className="data-index">
-					<div className="space">
-						<div className="justifc" data-index={index}>
+					<div data-index={index} className="space">
+						<div className="justifc">
 							<input className="checkbox" checked={watched} onClick={handleEdit} type="checkbox" />
 							<span style={`text-decoration: ${watched ? 'line-through' : 'none'}`}>{name}</span>
 						</div>
@@ -78,7 +78,7 @@ class App extends NevinhaComponent {
 	}
 
 	handleEdit({target}){
-		const index = target.parentNode.dataset.index;
+		const index = target.parentNode.parentNode.dataset.index;
 		const filteredTodos = this.state.todos.map((todo, todoIndex) => {
 			if(index == todoIndex){
 				return {...todo, watched: !todo.watched}
@@ -105,7 +105,8 @@ class App extends NevinhaComponent {
 	handleRemove(e){
 		e.preventDefault();
 
-		const index = e.target.parentNode.dataset.index;
+		const index = e.target.parentNode.parentNode.dataset.index;
+		console.log(e.target.parentNode.parentNode.parentNode)
 		const filteredTodos = this.state.todos.filter((todo, todoIndex) => index != todoIndex);
 
 		this.setState({
@@ -128,14 +129,14 @@ class App extends NevinhaComponent {
 						handleRemove={this.handleRemove}
 						todos={todos}
 					/>
-					<div className="space margin-item">
+					{/* <div className="space margin-item">
 						<p className="cl-font1">1 item left</p>
 						<span className="all-flex-span">
 							<a href="#" className="margin-all cl-font" id="buttom">All</a>
 							<a href="#" className="margin-all cl-font">Active</a>
 							<a href="#" className="margin-all cl-font">Clompleted</a>
 						</span>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		);
