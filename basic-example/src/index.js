@@ -52,9 +52,7 @@ class App extends NevinhaComponent {
 					<p className="margin-hello">Hello! This is the new: </p>
 					{name ? name : 'NevinhaJS'}
 				</h1>
-				<div>
-					<Form handleKeyPress={this.handleKeyPress} />
-				</div>
+				<Form handleKeyPress={this.handleKeyPress} />
 			</div>
 		);
 	}
