@@ -11,19 +11,18 @@ function h(type, attributes, ...args) {
 class Form extends NevinhaComponent {
 	render() {
 		const {handleKeyPress} = this.props;
-		const test = ['asd', 'bbc',3]
 
 		return (
 			<div class="form">
 				<input
-					onKeyUp={handleKeyPress}
-					type="text"
 					className="input"
+					onKeyUp={handleKeyPress}
 					placeholder="Edit page name"
+					type="text"
 				/>
 				<footer>
 					<p className="footer">
-						Type the page name in the input about
+						Type the page name in the input above
 					</p>
 				</footer>
 			</div>
