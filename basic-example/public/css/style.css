@@ -26,6 +26,7 @@ body {
 }
 
 .hello {
+	display: none;
     text-align: center;
     color: rgba(175, 47, 47, 0.15);
     font-size: 5rem;

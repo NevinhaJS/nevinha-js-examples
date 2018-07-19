@@ -48,7 +48,7 @@ class App extends NevinhaComponent {
 
 		return (
 			<div>
-				<h1 className="hello">
+				<h1 className="hello" fadeIn>
 					<p className="margin-hello">Hello! This is the new: </p>
 					{name ? name : 'NevinhaJS'}
 				</h1>
