@@ -23,7 +23,7 @@ img {
 	width: 60px;
 	position: absolute;
 	opacity: 0;
-	margin-top: 20%;
+	margin-top: 25%;
 	animation: move 2s infinite ease-in;
 }
 
@@ -116,6 +116,36 @@ img:nth-child(16) {
 	top: 220px;
 }
 
+img:nth-child(17) {
+	top: 50%;
+    left: 30%;
+}
+
+img:nth-child(18) {
+	top: 50%;
+    right: 60%;
+}
+
+img:nth-child(19) {
+    bottom: 10%;
+    right: 300px;
+}
+
+img:nth-child(20) {
+    top: 60%;
+    right: 10%;
+}
+
+img:nth-child(21) {
+    top: 20%;
+    right: -13%;
+}
+
+img:nth-child(22) {
+    top: 40%;
+    left: 50%;
+}
+
 @keyframes move {
 	0% {
 		opacity: 0;
@@ -124,6 +154,7 @@ img:nth-child(16) {
 		opacity: 1;
 	}
 	100% {
+		transform: rotateZ(160deg);
 		opacity: 0;
 	}
 }
