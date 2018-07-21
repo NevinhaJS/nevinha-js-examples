@@ -56,7 +56,7 @@ const List = ({todos, handleEdit, handleRemove}) => {
 					<div data-index={index} className="space">
 						<div className="justifc">
 							<input className="checkbox" checked={watched} onClick={handleEdit} type="checkbox" />
-							<span style={`text-decoration: ${watched ? 'line-through' : 'none'}`}>{name}</span>
+							<span style={`text-decoration: ${watched ? 'line-through' : 'none'};`}>{name}</span>
 						</div>
 						<a className="btn sub" href="#" onClick={handleRemove}><i class="fa fa-times"></i></a>
 					</div>
@@ -70,7 +70,7 @@ class App extends NevinhaComponent {
 	constructor() {
 		super();
 
-		this.state.todos = [];
+		this.state.todos = [{name: 'asdasda', watched: true}];
 
 		this.addTodo = this.addTodo.bind(this);
 		this.handleEdit = this.handleEdit.bind(this);
@@ -106,7 +106,6 @@ class App extends NevinhaComponent {
 		e.preventDefault();
 
 		const index = e.target.parentNode.parentNode.dataset.index;
-		console.log(e.target.parentNode.parentNode.parentNode)
 		const filteredTodos = this.state.todos.filter((todo, todoIndex) => index != todoIndex);
 
 		this.setState({

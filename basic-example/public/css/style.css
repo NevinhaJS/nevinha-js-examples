@@ -4,6 +4,10 @@ body {
 	margin: 0;
 }
 
+#my-app {
+	position: relative;
+}
+
 .height {
 	height: 100vh;
     padding-top: 1px;
@@ -23,6 +27,26 @@ body {
 	text-align: center;
 	width: 500px;
 	margin: 0 auto;
+}
+
+.provider {
+	height: 100vh;
+}
+
+.provider > div {
+	height: 200vh;
+}
+
+.parallax-ball {
+	height: 400px;
+	border-radius: 100%;
+	background: red;
+	position: absolute;
+}
+
+.parallax-ball-small {
+	width: 100px;
+    height: 100px;
 }
 
 .hello {

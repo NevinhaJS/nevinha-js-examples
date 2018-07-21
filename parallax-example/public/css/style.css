@@ -1,0 +1,129 @@
+body {
+	margin: 0;
+}
+
+h1 {
+	font-family: 'Merienda';
+	font-size: 6rem;
+	width: 100%;
+	text-align: center;
+	margin-top: 50vh;
+	font-weight: 300;
+}
+
+.provider {
+	height: 100vh;
+}
+
+.provider > div {
+	height: 150vh;
+}
+
+img {
+	width: 60px;
+	position: absolute;
+	opacity: 0;
+	margin-top: 20%;
+	animation: move 2s infinite ease-in;
+}
+
+img:nth-child(2) {
+	top: 10%;
+	left: 10%;
+}
+
+img:nth-child(3) {
+	animation-delay: 0.3s;
+	top: 10%;
+	left: 40%;
+}
+
+img:nth-child(4) {
+	animation-delay: 0.1s;
+	right: -10%;
+	top: -45%;
+}
+
+img:nth-child(5) {
+	animation-delay: 0.4s;
+	top: -80%;
+	left: 26%;
+}
+
+img:nth-child(6) {
+	animation-delay: 0.2s;
+	top: 20%;
+	right: 30%;
+}
+
+img:nth-child(7) {
+	animation-delay: 0.8s;
+	right: 10%;
+	top: 30%;
+}
+
+img:nth-child(8) {
+	animation-delay: 0.3s;
+	top: 40%;
+	left: -10%;
+}
+
+img:nth-child(9) {
+	animation-delay: 0.2s;
+	top: -10%;
+	left: 50%;
+}
+
+img:nth-child(10) {
+	animation-delay: 0.3s;
+	top: -12%;
+	left: 20px;
+}
+
+img:nth-child(11) {
+	animation-delay: 0.1s;
+	top: -20px;
+	left: 22%
+}
+
+img:nth-child(12) {
+	animation-delay: 0.3s;
+	left: 3%;
+	top: 30%;
+}
+
+img:nth-child(13) {
+	animation-delay: 0.222s;
+	top: -40px;
+	left: -18%;
+}
+
+img:nth-child(14) {
+	animation-delay: 0.88s;
+	right: 40%;
+	top: -20px;
+}
+
+img:nth-child(15) {
+	animation-delay: 0.34s;
+	top: 120px;
+    right: 110px;
+}
+
+img:nth-child(16) {
+	animation-delay: 0.44s;
+	left: 50%;
+	top: 220px;
+}
+
+@keyframes move {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
