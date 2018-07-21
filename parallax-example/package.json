@@ -22,6 +22,6 @@
     "webpack-dev-server": "^2.6.1"
   },
   "dependencies": {
-    "nevinha-js": "^0.2.2"
+    "nevinha-js": "^0.3.3"
   }
 }

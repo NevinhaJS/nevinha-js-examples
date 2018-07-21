@@ -15,7 +15,7 @@ class App extends NevinhaComponent {
 				<ParallaxProvider className="provider">
 					<h1>Nevinha JS</h1>
 
-					<img src="img/nevinha-js.png"parallax={{
+					<img src="img/nevinha-js.png" parallax={{
 						size: 0.2
 					}} />
 					<img src="img/nevinha-js.png" parallax={{
