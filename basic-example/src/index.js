@@ -48,19 +48,14 @@ class App extends NevinhaComponent {
 
 		return (
 			<div>
-				<ParallaxProvider className="provider">
-					<div>
-						<h1 className="hello" fadeIn>
-							<p className="margin-hello">Hello! This is the new: </p>
-							{name ? name : 'NevinhaJS'}
-						</h1>
+				<h1 className="hello" fadeIn>
+					<p className="margin-hello">Hello! This is the new: </p>
+					{name ? name : 'NevinhaJS'}
+				</h1>
 
-						<div className="parallax-ball parallax-ball-small" parallax></div>
+				<div className="parallax-ball parallax-ball-small" parallax></div>
 
-						<Form handleKeyPress={this.handleKeyPress} />
-					</div>
-				</ParallaxProvider>
-
+				<Form handleKeyPress={this.handleKeyPress} />
 			</div>
 		);
 	}

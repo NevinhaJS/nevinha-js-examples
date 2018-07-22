@@ -37,18 +37,6 @@ body {
 	height: 200vh;
 }
 
-.parallax-ball {
-	height: 400px;
-	border-radius: 100%;
-	background: red;
-	position: absolute;
-}
-
-.parallax-ball-small {
-	width: 100px;
-    height: 100px;
-}
-
 .hello {
 	display: none;
     text-align: center;
