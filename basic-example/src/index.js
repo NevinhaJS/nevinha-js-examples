@@ -1,4 +1,4 @@
-import {NevinhaComponent, render, ParallaxProvider} from 'nevinha-js';
+import {NevinhaComponent, render} from 'nevinha-js';
 
 /*eslint-disable */
 /** @jsx h */
@@ -20,7 +20,7 @@ class Form extends NevinhaComponent {
 					placeholder="Edit page name"
 					type="text"
 				/>
-				<footer>
+				<footer pulseSlow>
 					<p className="footer">
 						Type the page name in the input above
 					</p>
@@ -47,13 +47,11 @@ class App extends NevinhaComponent {
 		const {name} = this.state;
 
 		return (
-			<div>
-				<h1 className="hello" fadeIn>
+			<div scaleBounce>
+				<h1 className="hello">
 					<p className="margin-hello">Hello! This is the new: </p>
 					{name ? name : 'NevinhaJS'}
 				</h1>
-
-				<div className="parallax-ball parallax-ball-small" parallax></div>
 
 				<Form handleKeyPress={this.handleKeyPress} />
 			</div>
