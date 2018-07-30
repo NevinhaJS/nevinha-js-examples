@@ -13,7 +13,6 @@
     "babel-loader": "^7.1.1",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "eslint": "^5.1.0",
     "eslint-plugin-react": "^7.10.0",
@@ -22,6 +21,6 @@
     "webpack-dev-server": "^2.6.1"
   },
   "dependencies": {
-    "nevinha-js": "^0.4.0"
+    "nevinha-js": "^0.5.5"
   }
 }

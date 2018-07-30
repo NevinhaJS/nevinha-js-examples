@@ -128,14 +128,6 @@ class App extends NevinhaComponent {
 						handleRemove={this.handleRemove}
 						todos={todos}
 					/>
-					{/* <div className="space margin-item">
-						<p className="cl-font1">1 item left</p>
-						<span className="all-flex-span">
-							<a href="#" className="margin-all cl-font" id="buttom">All</a>
-							<a href="#" className="margin-all cl-font">Active</a>
-							<a href="#" className="margin-all cl-font">Clompleted</a>
-						</span>
-					</div> */}
 				</div>
 			</div>
 		);
