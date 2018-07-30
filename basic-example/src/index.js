@@ -2,7 +2,7 @@ import {NevinhaComponent, render, NevinhaDOM} from 'nevinha-js';
 
 class Form extends NevinhaComponent {
 	handleClick(){
-		this.setAnimation(this.context.teste.element, {
+		this.setAnimation(this.context.teste, {
 			name: "pulseSlow",
 			values: {
 				speed: 0.3
