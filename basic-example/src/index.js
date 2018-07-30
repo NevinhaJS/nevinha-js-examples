@@ -21,7 +21,7 @@ class Form extends NevinhaComponent {
 					placeholder="Edit page name"
 					type="text"
 				/>
-				<footer pulseSlow>
+				<footer>
 					<p className="footer" onClick={this.handleClick.bind(this)}>
 						Type the page name in the input above
 					</p>
