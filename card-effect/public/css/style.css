@@ -6,6 +6,7 @@ body {
 
 #my-app {
 	position: relative;
+	perspective: 600px;
 }
 
 .height {
