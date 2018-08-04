@@ -43,12 +43,12 @@ class App extends NevinhaComponent {
 		return (
 			<div>
 				{toggle ? (
-					<div enterLeftBounce>
-						{this.renderCard('front', 'enterLeftBounce')}
+					<div flipLeftBounce>
+						{this.renderCard('front', 'flipLeftBounce')}
 					</div>
 				) : (
-					<div enterRightBounce>
-						{this.renderCard('back', 'enterRightBounce')}
+					<div flipRightBounce>
+						{this.renderCard('back', 'flipRightBounce')}
 					</div>
 				)}
 			</div>
