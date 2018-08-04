@@ -1,0 +1,81 @@
+body {
+	background: #e1f1ff;
+	font: 24px 'Open Sans', sans-serif;
+	margin: 0;
+}
+
+#my-app {
+	position: relative;
+	perspective: 600px;
+}
+
+.height {
+	height: 100vh;
+	padding-top: 1px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	width: 320px;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 10px 10px 30px -6px rgba(60, 115, 158, 0.31), 20px 20px 20px -10px rgba(128, 191, 241, 0.01);
+}
+
+.card > footer > button {
+	outline: 0;
+	padding: 0.5rem 1rem;
+	font: 12px 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	border-width: 0;
+	background-color: rgba(0, 0, 0, 0.05);
+	color: #666;
+	border-radius: 4px;
+	transition: background-color .2s linear;
+	cursor: pointer;
+}
+
+.card > footer > button:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card > header {
+	background-color: #81BFF1;
+	border-radius: 4px 4px 0 0;
+	height: calc(116px + 1rem);
+	position: relative;
+}
+
+.card > header > h1 {
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: #3283c3;
+	bottom: 1rem;
+	position: absolute;
+	left: 1rem;
+	margin: 0;
+}
+
+.card > header > img {
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+	width: 100px;
+	height: 100px;
+}
+
+.card > main {
+	padding: 1rem;
+	font-size: 14px;
+	color: #666;
+}
+
+.card > footer {
+	padding: 0.5rem 1rem;
+	border-top: 1px solid #EFEFEF;
+	display: flex;
+	justify-content: flex-end;
+}
