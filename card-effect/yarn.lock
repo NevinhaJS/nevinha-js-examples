@@ -480,7 +480,7 @@ babel-helpers@^6.24.1:
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
 
-babel-loader@^7.1.1:
+babel-loader@^7.1.5:
   version "7.1.5"
   resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-7.1.5.tgz#e3ee0cd7394aa557e013b02d3e492bfd07aa6d68"
   dependencies:
@@ -3340,9 +3340,9 @@ neo-async@^2.5.0:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.5.1.tgz#acb909e327b1e87ec9ef15f41b8a269512ad41ee"
 
-nevinha-js@^0.5.5:
-  version "0.5.5"
-  resolved "https://registry.yarnpkg.com/nevinha-js/-/nevinha-js-0.5.5.tgz#dfe182226e955368215a6ccad5aa4c025d13ca0a"
+nevinha-js@^0.5.6:
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/nevinha-js/-/nevinha-js-0.5.6.tgz#76e23a192448901ca3149d12e78ea4ac45f386cf"
   dependencies:
     babel-plugin-external-helpers "^6.22.0"
     babel-plugin-transform-object-rest-spread "^6.26.0"
