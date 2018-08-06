@@ -1,4 +1,4 @@
-import {NevinhaComponent, render, NevinhaDOM} from 'nevinha-js';
+import {NevinhaComponent, render, NevinhaDOM, PerspectiveProvider} from 'nevinha-js';
 
 class App extends NevinhaComponent {
 	constructor() {
@@ -41,17 +41,17 @@ class App extends NevinhaComponent {
 		const {toggle} = this.state;
 
 		return (
-			<div>
+			<PerspectiveProvider>
 				{toggle ? (
-					<div enterLeftBounce>
-						{this.renderCard('front', 'enterLeftBounce')}
+					<div flipLeftBounce>
+						{this.renderCard('front', 'flipLeftBounce')}
 					</div>
 				) : (
-					<div enterRightBounce>
-						{this.renderCard('back', 'enterRightBounce')}
+					<div flipRightBounce>
+						{this.renderCard('back', 'flipRightBounce')}
 					</div>
 				)}
-			</div>
+			</PerspectiveProvider>
 		);
 	}
 }
