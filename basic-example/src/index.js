@@ -1,32 +1,21 @@
 import {NevinhaComponent, render, NevinhaDOM} from 'nevinha-js';
 
 class Form extends NevinhaComponent {
-	handleClick(){
-		this.setAnimation(this.context.teste.element, {
-			name: "pulseSlow",
-			values: {
-				speed: 0.3
-			}
-		})
-	}
-
 	render() {
 		const {handleKeyPress} = this.props;
 
 		return (
-			<div ref="teste" class="form">
+			<form class="app-form">
 				<input
 					className="input"
 					onKeyUp={handleKeyPress}
 					placeholder="Edit page name"
 					type="text"
 				/>
-				<footer pulseSlow>
-					<p className="footer" onClick={this.handleClick.bind(this)}>
-						Type the page name in the input above
-					</p>
+				<footer>
+					<p pulseSlow>Type the page name in the input above</p>
 				</footer>
-			</div>
+			</form>
 		);
 	}
 }
@@ -48,16 +37,16 @@ class App extends NevinhaComponent {
 		const {name} = this.state;
 
 		return (
-			<div>
-				<div enterLeftBounce>
+			<section>
+				<article enterLeftBounce>
 					<h1 className="hello">
 						<p className="margin-hello">Hello! This is the new: </p>
 						{name ? name : 'NevinhaJS'}
 					</h1>
 
 					<Form handleKeyPress={this.handleKeyPress} />
-				</div>
-			</div>
+				</article>
+			</section>
 		);
 	}
 }
