@@ -2,7 +2,7 @@ import {
   ADD_TODO,
   REMOVE_TODO,
   TOGGLE_TODO,
-  SET_VISIBILITY_FILTER,
+  SET_VISIBILITY_FILTER
 } from './actionTypes';
 
 export const addTodo = text => {

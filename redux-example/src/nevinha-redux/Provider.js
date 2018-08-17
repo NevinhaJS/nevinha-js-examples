@@ -7,9 +7,7 @@ export class Provider extends NevinhaComponent {
     };
   }
 
-  render(){
-    return (
-      <div>{this.children}</div>
-    );
+  render() {
+    return <div>{this.children}</div>;
   }
 }

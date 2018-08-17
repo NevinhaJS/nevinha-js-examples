@@ -1,6 +1,6 @@
 import {NevinhaComponent, render, NevinhaDOM} from 'nevinha-js';
 import {createStore} from 'redux';
-import {Provider} from './nevinha-redux/Provider';
+import {Provider} from 'nevinha-redux';
 import Test from './Form';
 import todoApp from './reducers/reducer';
 
@@ -43,9 +43,9 @@ class Main extends NevinhaComponent {
       <Provider store={store}>
         <App />
       </Provider>
-    )
+    );
   }
-};
+}
 
 const $root = document.querySelector('#my-app');
 render(Main, $root);
