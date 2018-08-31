@@ -1,6 +1,6 @@
 import {NevinhaComponent, NevinhaDOM} from 'nevinha-js';
 import {Connect} from 'nevinha-redux';
-import {addTodo} from './actions/todo-actions';
+import {addTodo} from './actions/todo-item';
 
 class Form extends NevinhaComponent {
   constructor(props, context) {
@@ -25,6 +25,8 @@ class Form extends NevinhaComponent {
 
   change(e) {
     this.setState({name: e.target.value});
+    console.log(this.props.name)
+
     return this.props.handleKeyPress(e);
   }
 

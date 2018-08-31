@@ -14,10 +14,20 @@ module.exports = {
 	],
 
 	module: {
-		loaders: [
-			{exclude: /node_modules/, loader: 'babel-loader', test: /\.js$/}
-		]
-	},
+    rules: [
+      {
+        test: /\.js$/,
+        use: ["source-map-loader"],
+        enforce: "pre"
+      },
+
+			{
+        exclude: /node_modules/, loader: 'babel-loader', test: /\.js$/
+      }
+    ]
+  },
+
+  devtool: "source-map",
 
 	output: {
 		filename: 'bundle.js',
